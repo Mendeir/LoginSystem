@@ -8,7 +8,7 @@
         $mname = $_POST["mname"];
         $lname = $_POST["lname"];
         $bday = $_POST["bday"];
-        $contact = $_POST["number"]
+        $contact = $_POST["number"];
         $email = $_POST["email"];
         $username = $_POST["username"];
         $user_password = $_POST["password"];
