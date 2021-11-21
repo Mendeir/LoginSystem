@@ -1,8 +1,4 @@
-<?php  
-	
 
-
-?>
 
 <!DOCTYPE html>
 <html>
@@ -18,20 +14,18 @@
 		}
 	</style>
 	<meta charset="utf-8">
-	<title>Change Image</title>
+	<title>Add/Change Image</title>
 </head>
 <body>
 	<center>
-		<h1>Change Password</h1>
+		<h1>Images</h1>
 		<div class="passform">
-			<form action="user_page.php" method="POST">
+			<form action="db/insert_image.php" method="POST" enctype="multipart/form-data">
 
-					<label for="price"> New image: </label>
-                    <input type="file" id="image-path" name="image-path" accept="image/png, image/jpeg" required>
-                    
-                    <br>
-                    <input type="submit" id="add-item-button" name="confirm" value="confirm">
+                    <input type="file" name="image">  	
+  	  				<button type="submit" name="upload">Upload Image</button>
 			</form>
+			<a href="user_page.php">Back</a>
 		</div>
 	</center>
 </body>

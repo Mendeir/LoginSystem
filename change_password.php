@@ -1,8 +1,4 @@
-<?php  
-	
 
-
-?>
 
 <!DOCTYPE html>
 <html>
@@ -24,7 +20,7 @@
 	<center>
 		<h1>Change Password</h1>
 		<div class="passform">
-			<form action="user_page.php" method="POST">
+			<form action="new_password.php" method="POST">
 					<label for="price"> Current Password: </label>
                     <input type="text" id="price" name="current" required>
                     <br>
