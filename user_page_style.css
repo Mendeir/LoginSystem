@@ -1,0 +1,61 @@
+body{
+	background: lightcyan;
+}
+
+.container{
+	background: lightblue;
+	border: 2px solid blue;
+	width: 600px;
+}
+
+.image{
+
+	width: 400px;
+	height: 100px;
+	
+}
+
+.info{
+	width: 400px;
+	height: 300px;
+}
+
+.about{
+	text-align: left;
+}
+
+.change{
+	float: left;
+    padding: 10px;
+    background: #0077B6;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.img{
+	float: right;
+    padding: 10px;
+    background: #0077B6;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logout{
+	float: right;
+    padding: 10px;
+    background: #0077B6;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
