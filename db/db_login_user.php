@@ -1,6 +1,5 @@
-<?php session_start();  ?>
-
 <?php 
+    session_start();
 
     include_once("db_connection.php");
 
@@ -16,19 +15,21 @@
         $run = mysqli_query($connection, $query);
         
 
-        if(mysqli_num_rows($run) === 1) {
+        if((mysqli_num_rows($run) === 1)) {
             $result = mysqli_fetch_array($run);
-
-            if ($result['acesslevel'] == 'admin')
+            echo "umabot dito";
+            if ($result['status'] == 'active') {
+                if ($result['acesslevel'] == 'admin')
                 header("Location:../admin_home.php");
             
-            if ($result['acesslevel'] == 'user')
-                header("Location:../user.php");
+                if ($result['acesslevel'] == 'user')
+                    header("Location:../user_home.php");
+            } else {
+                header("Location:../login.php?error=accountinactive");
+            }
+
         } else {
-            echo "User Login failed!";
+            header("Location:../login.php?error=wronglogin");
         }
     }
-
-
-
 ?>
